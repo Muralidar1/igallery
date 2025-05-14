@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js">
+  </script>
+</head>
+<body style="background-image:url('bg.jpg');
+             background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+ <h1 align="center" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:darkcyan;">Wings of Wonder</h1>
+  <div class="gallery">
+    <br><br><br>
+    <div><img src="1.jpeg" alt="Image 1" class="gallery-item" onclick="openModal(this)"></div>
+    <div><img src="2.jpeg"Image 2" class="gallery-item" onclick="openModal(this)"></div>
+    <div><img src="3.jpeg" alt="Image 3" class="gallery-item" onclick="openModal(this)"></div>
+    <div><img src="4.jpg" alt="Image 4" class="gallery-item" onclick="openModal(this)"></div>
+    <div><img src="5.jpeg" alt="Image 5" class="gallery-item" onclick="openModal(this)"></div>
+    <div><img src="6.jpg" alt="Image 6" class="gallery-item" onclick="openModal(this)"></div>
+    <div><img src="7.jpg" alt="Image 7" class="gallery-item" onclick="openModal(this)"></div>
+    <div><img src="8.jpg" alt="Image 8" class="gallery-item" onclick="openModal(this)"></div>    
+  </div>
+
+  
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+</body>
+</html>
